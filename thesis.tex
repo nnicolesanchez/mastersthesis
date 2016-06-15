@@ -83,16 +83,13 @@
 \Name{Dr. Kelly Holley-Bockelmann}
 \Role{Thesis Supervisor}
 % ---------------
-\Name{Dr. Keivan Stassun}
-\Role{Committee Member}
-% ---------------
 \Name{Dr. Andreas Berlind}
 \Role{Committee Member}
 % ---------------
 \Name{Dr. Steve Morgan}
 \Role{Committee Member}
 % ---------------
-\Chair{Dr. Arnold Burger}
+\Chair{Dr. Keivan Stassun}
 % ---------------
 \end{Committee}
 % *** END OF APPROVAL PAGE ***
@@ -144,7 +141,7 @@ before I'd even started the book. }
 \chapter*{\normalsize ABSTRACT}
 \thispagestyle{empty}
 \rhead{\small\thepage}
-Using cosmological hydrodynamic simulations of Milky Way-type (MW-type) Galaxies, we explore how varying assembly histories affect the mass budget of the SMBH. We examine two MW-mass halos with differing merger histories. One is characterized by several major mergers and the other with a quiescent history. We attempt to identify the importance of merger history on black hole accretion using varying resolution and SPH codes. This study is an extension of Bellovary et. al. 2013, which analyzed the accretion of high mass, high redshift galaxies and their central black holes, and found that the gas content of the central black hole is proportional to that accreted by the host galaxy halo. \textbf{[In this study, we find that a merger-rich galaxy will will have a central SMBH preferentially fed by the merger gas fueling the system. A quiescent galaxy, however, will have a SMBH that mirrors its host's composition.] \textit{(This may change.)}} Through an investigation of the angular momentum of the gas entering these hosts and their SMBHs, we determine that merger gas enters the galaxy with lower angular momentum compared to smooth accretion, accounting for the preferential fueling witnessed in the SMBH of the galaxy with an active merger history. Our results imply that galaxy mergers play an important role in the feeding of the SMBHs in the class of Milky Way-type galaxies.
+Using cosmological hydrodynamic simulations of Milky Way-type (MW-type) Galaxies, we explore how varying assembly histories affect the mass budget of the SMBH. We examine two MW-mass halos with differing merger histories. One is characterized by several major mergers and the other with a quiescent history. We attempt to identify the importance of merger history on black hole accretion using varying resolution and SPH codes. This study is an extension of Bellovary et. al. 2013, which analyzed the accretion of high mass, high redshift galaxies and their central black holes, and found that the gas content of the central black hole is proportional to that accreted by the host galaxy halo. In this study, we find that a merger-rich galaxy will have a central SMBH preferentially fed by the merger gas fueling the system. A quiescent galaxy, however, will have a SMBH that mirrors its host's composition. Through an investigation of the angular momentum of the gas entering these hosts and their SMBHs, we determine that merger gas enters the galaxy with lower angular momentum compared to smooth accretion, partially accounting for the preferential fueling witnessed in the SMBH of the galaxy with an active merger history. In addition, the disruptive power of mergers, particularly major merger (q \textgreater 0.3), also helps funnel the low angular momentum gas more readily to the center of the galaxy. Our results imply that galaxy mergers play an important role in the feeding of the SMBHs in the class of Milky Way-type galaxies.
 \vspace{4ex}
 %\end{center}
 % *** END OF ABSTRACT ***
@@ -157,9 +154,9 @@ Using cosmological hydrodynamic simulations of Milky Way-type (MW-type) Galaxies
 %\pagenumbering{gobble}
 \thispagestyle{empty}
 
-Supermassive black holes (SMBHs) are thought to exist in almost all massive galaxies. \citep{Kormendy2013} In the canonical picture of BH growth, these black holes may become active galactic nuclei (AGN) during periods of high accretion and wane in periods of quiescence. \citep{Alexander2005,Papovich2006,Volonteri2012} The host galaxy's size, star formation rate, and other environmental effects may help to influence the growth of the black hole residing at its center; however, there are still uncertainties concerning the relationship between these SMBHs and their much larger host galaxies, as well as how they grow and evolve together. \citep[5-8 citations here]{Haehnelt2000,DiMatteo2005,Hopkins2006,Fu2008,Sijacki2009,Silverman2009,Mullaney2012}
+Supermassive black holes (SMBHs) are thought to exist in almost all massive galaxies. \citep{Kormendy2013} In the canonical picture of BH growth, these black holes may become active galactic nuclei (AGN) during periods of high accretion and wane in periods of quiescence. \citep{Alexander2005,Papovich2006,Volonteri2012} The host galaxy's size, star formation rate, and other environmental effects may help to influence the growth of the black hole residing at its center; however, there are still uncertainties concerning the relationship between these SMBHs and their much larger host galaxies, as well as how they grow and evolve together. \citep{Haehnelt2000,DiMatteo2005,Hopkins2006,Fu2008,Sijacki2009,Silverman2009,Mullaney2012}
 
-The M$-\sigma$ relation, which relates the SMBH's mass and the velocity dispersion of the host galaxy's central stellar population, gives some insight into the complex interplay between these objects. \citep{Ferrarese2000} A prominent trend appears, as SMBHs tend to scale with the velocity dispersion of the host galaxy bulge. A prominent trend appears as SMBHs tend to scale with the spheroidal center of their host galaxies; i.e. less massive SMBH reside in galaxies with less disperse bulges, and more massive SMBH live in galaxies with larger velocity dispersions in their bulges. The tightness of the relation is significant and can be seen over several orders of magnitudes in velocity dispersion and black hole mass. \citep{Merritt2001,Graham2011,Mcconnell2013,Kormendy2013} Scatter exists among the low mass galaxies and a deviation may appear at the high mass end, where overmassive BHs may reside. \citep{VanDenBosch2007,Moster2010,Natarajan2011} However, scatter in less massive galaxies may imply that there are several channels of black hole growth at play in the low mass end of the relation. \citep{Micic2007,Volonteri2009,Reines2013,Graham2014} One standard explanation for the M$-\sigma$ relation lies in galaxy mergers, which build up galaxies, feed SMBHs, and assemble bulges. \citep{DiMatteo2005,Shen2008} Major mergers are thought to supply gas to the central SMBH resutling in feedback which quenches star formation and affects the structure of the galaxy. 
+The M$-\sigma$ relation, which relates the SMBH's mass and the velocity dispersion of the host galaxy's central stellar population, gives some insight into the complex interplay between these objects. \citep{Ferrarese2000} A prominent trend appears, as SMBHs tend to scale with the velocity dispersion of the host galaxy bulge. The tightness of the relation is significant and can be seen over several orders of magnitudes in velocity dispersion and black hole mass. \citep{Merritt2001,Graham2011,Mcconnell2013,Kormendy2013} Scatter exists among the low mass galaxies and a deviation may appear at the high mass end, where overmassive BHs may reside. \citep{VanDenBosch2007,Moster2010,Natarajan2011} However, scatter in less massive galaxies may imply that there are several channels of black hole growth at play in the low mass end of the relation. \citep{Micic2007,Volonteri2009,Reines2013,Graham2014} One standard explanation for the M$-\sigma$ relation lies in galaxy mergers, which build up galaxies, feed SMBHs, and assemble bulges. \citep{DiMatteo2005,Shen2008} Major mergers are thought to supply gas to the central SMBH resulting in feedback which quenches star formation and affects the structure of the galaxy. 
 
 \begin{figure}
 \centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{fancymsigma}}}
@@ -169,17 +166,31 @@ The M$-\sigma$ relation, which relates the SMBH's mass and the velocity dispersi
 
 % FOR SHOCKS: The simulations I am studying are run with a new implementation of Gasoline, which models hydrodynamic processes like shocks very well by using a geometric density average in the SPH force expression
 
-The black hole mass-bulge luminosity relation was first implied by the work of \cite{Dressler1988}. \cite{Dressler1989} first proposed the correlation and it was first illustrated by \cite{Kormendy1993}. A wealth of evidence continues to relate these two characteristics, and follow up examinations using HST observations have determined the currect, best estimates yield a M$_{\rm BH}$/M$_{\rm bulge}$ fraction between about 0.0013 and 0.0023 \citep{Merritt2001a,McLure2001,Marconi2003}. 
+The black hole mass-bulge luminosity relation was implied by the work of \cite{Dressler1988} and first illustrated by \cite{Kormendy1993}. A wealth of evidence continues to relate these two characteristics, and follow up examinations using HST observations have determined the current, best estimates yield a M$_{\rm BH}$/M$_{\rm bulge}$ fraction between about 0.0013 and 0.0023 \citep{Merritt2001a,McLure2001,Marconi2003}. 
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_faceon_crop}}}
+\caption[GASOLINE h258]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h258, which has an active, merger-rich history. At z $\sim$ 0, the halo has a mass of 7.87 $\times$ 10$^{11}$ M$_{\odot}$, the SMBH has a mass of 6.94 $\times$ 10$^6$ M$_{\odot}$, and a virial radius of 238.49 kpc. }
+\label{h258face} 
+\end{figure}
 
 Major mergers between massive galaxies are thought to be efficient fueling mechanisms for bright AGN. The large influx of material due to tidal torques from the merger causes bursts of star formation and helps funnel gas directly into the center where the SMBH resides. \citep{Richards2006,Reddy2008,Hopkins2010} Additionally, the most massive, highest-luminosity AGN (i.e. quasars) reside in incredibly luminous infrared galaxies where star formation is abundant, signifying that major mergers may have recently occurred. \citep{Treister2012} Distorted morphologies are often characteristics of quasar hosts, and companions can also be present around quasars, both of which are evidence that strengthen the possibility of a recent merger having affected their lifetimes. 
 
-In many less massive and less luminous AGN, however, there is a clear lack of distorted morphologies, close neighbors, and/or other obvious merger evidence.  \citep{Ryan2007,Schawinski2011,Ellison2013,Hicks2013}[Maybe a different Ellison paper?] It is also important to note that many of these AGN exist in spiral galaxies, which are unlikely to have been recently disturbed by major mergers. \citep[Which 1990's Tremaine?]{Springel2005,Kocevski2011} Nevertheless, some evidence suggests \citep{vanGorkom1997,Governato2009} that disturbed galaxies may reform a disk quickly, even after a major merger as long as it is gas-rich. More recently, \cite{Treister2012} has suggested that only the highest luminosity AGN require fueling via major mergers; $\sim$90\% of AGN across all redshifts are fueled by various other mechanisms which may include minor mergers, flybys, and smooth accretion, whereby gas is directly accreted via large filaments from the ambient intergalactic medium \citep{Cox2006,Bellovary2013,Sinha2012}. 
-Smooth accretion, in particular, may play an important role in fueling these low mass galaxies. Halos less than 10$^{11} M_{\odot}$ can accrete filaments of unshocked gas; thereafter, gas will shock heat to the virial temperature of the halo. \citep{Keres2005} Even for massive halos, unshocked gas may still penetrate shocked regions to fuel the galaxy. \citep{Brooks2007,Dekel2009,Nelson2013} In addition, SMBH feedback, the reaction effect of the energy obtained through gas accretion, also affects the overarching structure of the host galaxy. Secular processes, including bar formation and disk instabilities, may also be prominent forms of accretion for these SMBHs. \citep{Kormendy2013}  
+In many less massive and less luminous AGN, however, there is a clear lack of distorted morphologies, close neighbors, and/or other obvious merger evidence.  \citep{Ryan2007,Schawinski2011,Ellison2013,Hicks2013} It is also important to note that many of these AGN exist in spiral galaxies, which are unlikely to have been recently disturbed by major mergers. \citep{Springel2005,Kocevski2011} Nevertheless, some evidence suggests \citep{vanGorkom1997,Governato2009} that disturbed galaxies may reform a disk quickly, even after a major merger as long as it is gas-rich. More recently, \cite{Treister2012} has suggested that only the highest luminosity AGN require fueling via major mergers; $\sim$90\% of AGN across all redshifts are fueled by various other mechanisms which may include minor mergers, flybys, and smooth accretion, whereby gas is directly accreted via large filaments from the ambient intergalactic medium \citep{Cox2006,Bellovary2013,Sinha2012}. 
+Smooth accretion, in particular, may play an important role in fueling these low mass galaxies. Halos less than 10$^{11}$ $M_{\odot}$ can accrete filaments of unshocked gas; thereafter, gas will shock heat to the virial temperature of the halo. \citep{Keres2005} Even for massive halos, unshocked gas may still penetrate shocked regions to fuel the galaxy. \citep{Brooks2007,Dekel2009,Nelson2013} In addition, SMBH feedback, the reaction effect of the energy obtained through gas accretion, also affects the overarching structure of the host galaxy. Secular processes, including bar formation and disk instabilities, may also be prominent forms of accretion for these SMBHs. \citep{Kormendy2013}  
 
 \section{Objectives}
 It is clear that galaxy hosts grow through variety of channels that depend on mass, environment, and interaction history. Therefore, we want to understand how these different galaxy evolutionary paths translate into different SMBH fueling mechanisms, and see how they affect the fueling gas flowing into the SMBH itself. \cite{Bellovary2013} compared simulations of three high mass, high redshift galaxies and found that while mergers and smooth accretion both efficiently build up galaxies, no particular method was more adept at feeding the SMBH. Using a similar method as \cite{Bellovary2013}, this work compares the SMBH and galaxy fueling mechanisms between two Milky Way (MW) mass galaxies. 
-	
-We analyze two galaxy simulations that are similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258 (Figure \ref{h258face}), has a history characterized by major mergers, while our ``quiet'' galaxy, h277 (Figure \ref{h277face}), has a quiescent history with only minor mergers. Since these galaxies are similar to the MW in virial mass, stellar mass, and circular velocity, without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the origins of gas entering the SMBH and halo to look for clues about SMBH fueling within these galaxies. MW-type galaxies host SMBHs on the order of 10$^6$ M, which are likely the most common type of massive black hole, yet little is known about them or how they may grow \citep{Kormendy2013}.  By examining the assembly of these galaxies, and their SMBH fueling, we compare the accretion rates between h258 and h277 to determine which accretion methods dominate in this class of galaxies.
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_faceon}}}
+\caption[GASOLINE h277]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h277, which has a quiescent, merger-quiet history. At z $\sim$ 0, the halo has a mass of 6.48 $\times$ 10$^{11}$ M$_{\odot}$, the SMBH has a mass of 2.40 $\times$ 10$^7$ M$_{\odot}$, and a virial radius of 223.55 kpc. }
+\label{h277face} 
+\end{figure}
+
+We analyze two galaxy simulations that are similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258 (Figure \ref{h258face}), has a history characterized by major mergers, while our ``quiet'' galaxy, h277 (Figure \ref{h277face}), has a quiescent history with only minor mergers. Since these galaxies are similar to the MW in virial mass, stellar mass, and circular velocity, without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the origins of gas entering the SMBH and halo to look for clues about SMBH fueling within these galaxies. MW-type galaxies host SMBHs on the order of 10$^6$ $M_{\odot}$, which are likely the most common type of massive black hole, yet little is known about them or how they may grow \citep{Kormendy2013}.  By examining the assembly of these galaxies, and their SMBH fueling, we compare the accretion rates between h258 and h277 to determine which accretion methods dominate in this class of galaxies.
+
+
 % *** END OF INTRODUCTION ***
 
 
@@ -187,15 +198,16 @@ We analyze two galaxy simulations that are similar at z = 0 but have very differ
 \chapter{\normalsize SIMULATION PARAMETERS}
 \thispagestyle{empty}
 
-The cosmological simulations have been run using two smoothed particle hydrodynamics (SPH) N-body tree code: Gasoline \citep[][Stadel 2001, how do I cite a PhD thesis?]{Wadsley2004} and, more recently, Charm N-body GrAvity solver, ChaNGa. 
+The cosmological simulations have been run using two smoothed particle hydrodynamics (SPH) N-body tree code: Gasoline \citep{Wadsley2004} and, more recently, Charm N-body GrAvity solver, ChaNGa. 
 
-An initial DM-only, uniform resolution 50 comoving Mpc box determined which halos would be selected for zoom-in examination, including the two halos examined in this paper. The DM-only simulation assumed a WMAP Year 3 cosmology \citep{Spergel2007} with the following specifications: $\Omega _m$ = 0.24, $\Omega _{\Lambda}$ = 0.76, $H_0$ = 73 km/s, and $\sigma _8$ = 0.77. The halos h258 and h277  were chosen for their Milky Way-mass, between 6--8 $\times$ 10$^{11}$  M$_{\odot}$, at z=0 and their active and quiescent merger histories, respectively. The halos have virial masses defined relative to a critical density, $\rho _c$, where $\rho / \rho _c$ = 100 where h258 and h277 have virial masses of $M_{\rm vir} = 7 \times 10^{11} M_{\odot}$ and $M_{\rm vir} = 8 \times 10^{11} M_{\odot}$, respectively. A recent binary merger characterizes the h258 halo at z=1, while h277 has its last major merger near z $\sim$ 3. A second ``zoom-in'' high resolution simulation was run for both of these galaxies including gas and star particles using the volume renormalization of \cite{Katz1993}, resimulating only a few virial radii from the main halo at the highest resolution. Both simulations were run from z=150 to z=0.  [Make sure this is true for low res. True for high res.]
+An initial DM-only, uniform resolution 50 comoving Mpc box determined which halos would be selected for zoom-in examination, including the two halos examined in this paper. The DM-only simulation assumed a WMAP Year 3 cosmology \citep{Spergel2007} with the following specifications: $\Omega _m$ = 0.24, $\Omega _{\Lambda}$ = 0.76, $H_0$ = 73 km/s, and $\sigma _8$ = 0.77. The halos h258 and h277  were chosen for their Milky Way-mass, between 6--8 $\times$ 10$^{11}$  M$_{\odot}$, at z=0 and their active and quiescent merger histories, respectively. The halos have virial masses defined relative to a critical density, $\rho _c$, where $\rho / \rho _c$ = 100 where h258 and h277 have virial masses of $M_{\rm vir} = 7 \times 10^{11} M_{\odot}$ and $M_{\rm vir} = 8 \times 10^{11} M_{\odot}$, respectively. A recent binary merger characterizes the h258 halo at z=1, while h277 has its last significant merger near z $\sim$ 3. A second ``zoom-in'' high resolution simulation was run for both of these galaxies including gas and star particles using the volume renormalization of \cite{Katz1993}, resimulating only a few virial radii from the main halo at the highest resolution. Both simulations were run from z=150 to z=0.  
+%[Make sure this is true for low res. True for high res.]
 
 Gas can reach a minimum temperature of $\sim$100 K, without the inclusion of cooling via molecular hydrogen or metals. The simulation includes stochastically modeled star formation, including a star formation efficiency parameter of c$^*$ $=$ 0.1 and density threshold (2.5 amu cm$^{-3}$) for gas particles above which they become eligible to form stars; the gas must remain below a temperature threshold of 10$^4$ K. Star particles form along the Kroupa initial mass function \citep{Kroupa2001}. Supernova feedback releases $10^{51}$ ergs of thermal energy and affects a ``blastwave'' radius determined by the method of \cite{Ostriker1988}. In the affected region, cooling turns off for a time relative to the expansion phase of the SN remnant. SN Ia and II from \cite{Thielemann1986} and \cite{Woosley1986} are adopted, respectively, and implemented through the \cite{Raiteri1996} method. Both supernova ``blastwave'' radius calculations and supernova (Ia and II) prescriptions are as described in detail by \cite{Stinson2006}. A low-temperature extension to the cooling curve is used to trace metals \citep{Bromm2001}. Simulated galaxies are shown to conform with the observed Tully-Fisher relation \citep{Governato2009}, the size-luminosity relation \citep{Brooks2011}, and the mass-metallicity relation \citep{Brooks2007}, in addition to having realistic matter distributions and baryon fractions \citep{Governato2009a,Guedes2011}. These parameter and resolution choices allow the galaxies to adhere to the stellar-mass-halo-mass relation at z=0 and maintain a realistic period of star formation. \citep{Moster2010,Munshi2013,Brooks2007,Maiolino2008} We are confident with these criteria and restraints that we reasonably represent growth in the galaxy and its SMBH. We exclude AGN feedback in these small to moderate mass galaxies; however, we have determined that has little effect on the global properties of the galaxy and SMBH.
  
-Since, there are uncertainties in the formation of black holes ``seeds,'' we implement a BH seeding method that is broadly consistent the theories of direct collapse black holes \citep{Couchman1986, Abel2002, Bromm2004} and Population III stellar remnants\citep{Loeb1994, Eisenstein1995, Koushiappas2004, Begelman2006, Lodato2006}. While this method allows the BH formation process to remain physically motivated. BH seeds form if their parent gas particle match the criteria required for star formation and also maintain zero metallicity. \citep{Stinson2006} A probability of $\chi_{\rm seed}$ $\sim$ 0.01 is applied to determine whether a gas particle (with the above specifications) will become a BH seed with a mass of M$_{\rm BH}$ = 2.28 $\times$ 10$^5$ M$_{\odot}$, the same mass as its parent gas particle. This probability was chosen to match the predicted occupation probability of BH seeds at z $\sim$ 3. \citep{Volonteri2008} 
+Since, there are uncertainties in the formation of black holes ``seeds,'' we implement a BH seeding method that is broadly consistent the theories of direct collapse black holes \citep{Couchman1986, Abel2002, Bromm2004} and Population III stellar remnants \citep{Loeb1994, Eisenstein1995, Koushiappas2004, Begelman2006, Lodato2006}. While this method allows the BH formation process to remain physically motivated, BH seeds form if their parent gas particle match the criteria required for star formation and also maintain zero metallicity. \citep{Stinson2006} A probability of $\chi_{\rm seed}$ $\sim$ 0.01 is applied to determine whether a gas particle (with the above specifications) will become a BH seed with a mass of M$_{\rm BH}$ = 2.28 $\times$ 10$^5$ M$_{\odot}$, the same mass as its parent gas particle. This probability was chosen to match the predicted occupation probability of BH seeds at z $\sim$ 3. \citep{Volonteri2008} 
 %This circumvents the Soltan argument wherein mergers alone are not the primary feeders of BHs, allowing for accretion growth to dominate \citep{Soltan1982}.  
-BH seed formation ends at z $\sim$ 3.5 due to the dilution of pristine gas by efficient metal diffusion expected after the first population of supernovae. The requirement that BH seeds must form from zero metallicity gas particles also causes BH formation to be constrained in areas of early star formation bursts, where the earliest and most massive halos are expected to form in the simulation. BH formation is dependent only on their local environment, neglecting any large-scale properties of the host halo. Black holes are not fixed within the center of their host, allowing them to be dynamically affected by mergers and other perturbations within the galaxy. Nevertheless, BHs are kept near their host centers by choosing dark matter particles masses in high-resolution regions to be on the same order as gas particle masses which minimizes two-body interactions. \citep[Change citations?]{Bellovary2010,Zolotov2012}
+BH seed formation ends at z $\sim$ 3.5 due to the dilution of pristine gas by efficient metal diffusion expected after the first population of supernovae. The requirement that BH seeds must form from zero metallicity gas particles also causes BH formation to be constrained in areas of early star formation bursts, where the earliest and most massive halos are expected to form in the simulation. BH formation is dependent only on their local environment, neglecting any large-scale properties of the host halo. Black holes are not fixed within the center of their host, allowing them to be dynamically affected by mergers and other perturbations within the galaxy. Nevertheless, BHs are kept near their host centers by choosing dark matter particle masses in high-resolution regions to be on the same order as gas particle masses, minimizing two-body interactions. \citep{Bellovary2010,Zolotov2012}
 
 Black hole mergers occur when they are separated by less than twice the softening length, and must be bound or satisfy $(1/2) \delta v^2 < \delta a \cdot \delta r$,  where $\delta v$ and $\delta a$ are the velocity and acceleration differences between the two black holes and $\delta r$ is the distance separating them. In addition to gaining mass via merger, black holes gain mass through Bondi-Hoyle gas accretion:
 \begin{equation}
@@ -205,7 +217,7 @@ where $\alpha$ is a constant equal to 1, $\rho$ is the density of the surroundin
  
 \section{\normalsize Low Resolution GASOLINE Simulations}
 
-Our low resolution simulations were first run using the smoothed particle hydrodynamics (SPH) N-body tree code Gasoline \citep[][Stadel 2001, how do I cite a thesis?]{Wadsley2004}, with a force resolution of 320 pc and the gas, dark matter, and star particle masses of 2 $\times$ 10$^5$ M$_{\odot}$, 3 $\times$ 10$^5$ M$_{\odot}$, and 7 $\times$ 10$^4$ M$_{\odot}$, respectively.  [Include starting numbers of gas, DM, and stars?] Both N-body+SPH volume renormalized simulations of h258 and h277 have been previously examined in other publications. \cite{Governato2009} studied the regrowth of the large disk structure in h258 by z=0 when such a recent merger affects the galaxy. This code includes a force resolution of 260 comoving pc, dark matter (DM) particles with masses of $1.3 \times 10^5 M_{\odot}$, and initial gas particle masses of $9 \times 10^4 M_{\odot}$.  
+Our low resolution simulations were first run using the smoothed particle hydrodynamics (SPH) N-body tree code Gasoline \citep{Wadsley2004}, with a force resolution of 320 pc and the gas, dark matter, and star particle masses of 2 $\times$ 10$^5$ M$_{\odot}$, 3 $\times$ 10$^5$ M$_{\odot}$, and 7 $\times$ 10$^4$ M$_{\odot}$, respectively. Both N-body+SPH volume renormalized simulations of h258 and h277 have been previously examined in other publications. \cite{Governato2009} studied the regrowth of the large disk structure in h258 by z=0 when such a recent merger affects the galaxy. This code includes a force resolution of 260 comoving pc, dark matter (DM) particles with masses of $1.3 \times 10^5 M_{\odot}$, and initial gas particle masses of $9 \times 10^4 M_{\odot}$.  
 	
 \section{\normalsize High Resolution CHANGA Simulations}
 
@@ -221,13 +233,13 @@ In this paper, we demonstrate that the results from this high resolution ChaNGa 
 
 The Amiga Halo Finder identifies all of the halos in the simulations by identifying the virial radii of the halos based on an overdensity using the criterion for a flat universe. \citep{Knebe2001,Knollmann2009,Gill2004} We select the primary halo by determining the most massive galaxy at z=0 and locating the central SMBH. For our Gasoline simulations, both the primary halo in h258 and h277 had final masses on the order of $10^{12} M_{\odot}$ and a formation redshift of z$\sim$4.  
 
-EDIT: Include specs: mass, formation z, N (just for primary halos? Ask Kelly what she means.)
+%EDIT: Include specs: mass, formation z, N (just for primary halos? Ask Kelly what she means.)
 
 In this analysis, we trace gas particles from their origin through their journey into the galaxy and SMBH to determine their position within the SMBH or its host \citep{Brooks2009} . We then trace the SMBH back through time, determining its host halo in each snapshot. As we discussed in the introduction, there are a variety of fueling mechanisms thought to grow SMBH. Gas particles are initially traced prior to their accretion onto the main halo to determine whether they occupied a different halo at their formation. The particles are then classified by their method of entrance into the primary halo. If the gas particles existed in the primary halo at the first time step, they are classified as ``early'' gas. Gas that belonged to a different halo than the primary prior to accretion is classified as ``clumpy'' and enters the primary halo through mergers. All other gas is classified as entering the halo via ``smooth'' accretion, and is then subdivided into two categories: ``cold'' and ``shocked.'' In the cases where a shock does not develop, unshocked gas will usually flow into the halo via large-scale, dark matter filaments. (Bellovary 2013) It's possible for the filaments to also be dense enough to pierce an already developed shock allowing for unshocked gas to funnel into the galaxy core where it can accrete onto the SMBH without being heated to the virial temperature.
 
 As previously described, if the galaxy halo is around or greater than 10$^{11}$ M$_{\odot} $, the gas will shock. We determine shocked particles through an increase in entropy and temperature using the following criteria:
 \begin{equation}
-T_{\rm shock} \geq 3/8 T_{vir}
+T_{\rm shock} \geq 3/8 T_{\rm vir}
 \end{equation}
 where T$_{\rm vir}$ is the virial temperature of the halo and T$_{\rm shock}$ is the temperature of the gas particle, and 
 \begin{equation}
@@ -237,7 +249,7 @@ where S$_0$ is the initial entropy of the gas particle and
 \begin{equation}
 S_{\rm shock} = log_{10}[3/8 T_{\rm vir}^{1.5}/4 \rho_0]
 \end{equation}
-where $\rho_0$ is the gas density prior to experiencing the shock. The galaxies in this study reach final masses on the order of 10$^{12}$ M$_{\odot} $, therefore, shocked gas begins to enter the galaxy by the later timesteps of our simulation when it has reached this critical mass. 
+where $\rho_0$ is the gas density prior to experiencing the shock. The galaxies in this study reach final masses on the order of 10$^{12}$ M$_{\odot} $, therefore, shocked gas begins to enter the galaxy by the later timesteps of our simulation where it has reached this critical mass. 
 
 Once all the gas particles have been individually categorized, we can use these labels to determine the methods of accretion onto these Milky Way-size galaxies. With the information about which particles are accreting onto the SMBH (from the gas reservoir of particles that have been accreted by the galaxy), we can better compare the methods feeding both the galaxy and its SMBH. We can then determine whether there exists a method more efficiently building up these kinds of galaxies and their SMBH.
 % *** END OF METHODOLOGY *** 
@@ -250,44 +262,138 @@ From the initial analysis of the low resolution Gasoline simulations, we have de
 
 \section{Gasoline - Low Resolution h258: Resolution Test}
 	
-The galaxy, h258, is characterized by an active merger history including a major merger at z=1 (Figure \ref{h258face}). The merger can be seen affecting the cumulative black hole mass (Figure \ref{h258allmassgas}) as well as the gas fractions within the both the SMBH and galaxy (Figure \ref{h258numfrac}). 
-Figure \ref{h258allmassgas} shows h258's central SMBH's cumulative mass as a function of time (lower axis) and redshift (upper axis). The black dashed line indicates the total cumulative BH mass (including both mass from gas and BH mergers), while the black solid line indicates only the total gas mass accreted by the BH. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo. Though this figure shows that the primary source of mass gain at high redshifts is through mergers with other black holes, there is a significant increase in the amount of gas adding to the mass of the SMBH starting at z $\sim$ 1, where we know a major merger takes place. \textbf{[Reference merger tree here once you've added it.]} Figure \ref{h258numfrac} shows the fractions of unshocked and clumpy gas compared to all accreted gas as a function of redshift. It confirms that unshocked gas (blue) makes up the majority of gas entering the galaxy (solid lines) at early times; nevertheless, around the time of the merger (z $\sim$ 1) a marked change occurs in the gas fractions within the black hole (dashed lines) where clumpy gas (green) becomes the main component of total gas. 
+The galaxy h258 is characterized by an active merger history, including a major merger (q=0.9, with an incoming gas mass of 1.26 $\times$ 10$^10$ $M_{\odot}$) at z=1 (Figure \ref{h258face}). The merger can be seen increasing the cumulative black hole mass (Figure \ref{h258allmassgas}) as well as the gas fractions within both the SMBH and galaxy (Figure \ref{h258numfrac}). Figure \ref{h258allmassgas} shows the cumulative SMBH mass in h258 as a function of time (lower axis) and redshift (upper axis). The black dashed line indicates the total cumulative BH mass (including both mass from gas and BH mergers), while the black solid line indicates the total accreted gas mass. The blue dot-dashed line represents the gas mass accreted via unshocked gas, while the green solid line and red dashed line show the gas mass accreted through mergers and shocked gas, respectively. It is also worthwhile to point out that the largest part of the mass budget at high redshift is not gas at all, but other black holes that have merged with the SMBH seed. This has important implications for gravitational wave astronomy, increasing the event rate for SMBH assembly at high redshifts. \citep{Holley-Bockelmann2010} Aside from this early BH assembly, the largest gain in SMBH mass comes from gas associated with the major merger at z $\sim$ 1. Figure \ref{h258numfrac} shows the fractions of unshocked and clumpy gas compared to all accreted gas as a function of redshift. It confirms that unshocked gas makes up the majority of gas entering the galaxy at early times. Nevertheless, around the time of the merger (z $\sim$ 1) a marked change occurs in the gas fractions and clumpy gas becomes the main component of total gas in the BH.
 
-Figure \ref{h258stackfrac} depicts the fractions of total gas in the galaxy (a) and the SMBH (b) at z=0, again differentiated by the gas particles' origins. Blue, green, and red distinguish cold, clumpy, and shocked, respectively. Yellow indicates gas that existed within the main halo upon formation. The galaxy has a mass nearly half comprised of gas entering the galaxy through unshocked, smooth accretion (48 \%), with 39 \% of the gas entering through mergers. The smallest fractions of the total gas are comprised of shocked gas (9 \%) and ``early''gas which existed at formation makes up the final, smallest fraction (4 \%). Unlike the galaxy, nearly 65 \% of the gas accreted by the central SMBH was gas accreted via mergers, while only a quarter (26 \%) is comprised of unshocked, smoothly accreted gas. Shocked gas makes up the last 9 \% of total gas entering the SMBH, along with a negligible ($<$ 1\%) amount of ``early'' gas. \textbf{So Figure \ref{h258stackfrac} shows explicitly that the SMBH more readily accretes gas gained through mergers.} This result is \textit{contrary} to the previous results of \cite{Bellovary2013} which found that the fractions of gas comprising the SMBH's total gas mass and that in its host were nearly the same. This result is surprising, but important, as it allows us to consider that a different physical mechanism characterizes the gas entering this MW-type galaxy than those affecting the gas accretion of the high mass galaxies examined by \cite{Bellovary2013}. 
+\begin{figure}
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_allmassgas_final}}}
+\caption[GASOLINE h258 SMBH Cumulative Mass]{The cumulative mass of h258's SMBH as a function of time and redshift. The black dashed line indicates the total BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas, while the green solid and red dashed lines indicate the mass accreted through mergers and shocked gas, respectively.}
+\label{h258allmassgas} 
+\end{figure}
 
-We examine the angular momentum of the gas at the moment it enters the galaxy for clues to the understand the ready accretion of merger accreted gas. (Figure \ref{h258angmom}) A cumulative distribution of the angular momentum of entering gas, differentiated based on method of entrance into the galaxy, shows that gas entering the SMBH (dashed lines) has an overall lower angular momentum than gas entering galaxy (solid lines). This statement is true whether the gas enters via unshocked smooth accretion, becomes shocked upon entry, or enters through a galaxy merger (blue, red, green, respectively). Therefore, we can infer from this plot that lower angular momentum gas more readily flows into the central region of the host galaxy where it can be accreted by the black hole. In contrast, \cite{Bellovary2013} found a \textit{slight} preference for gas of a lower angular momentum to enter the SMBH. The question remains, however, as to why unshocked gas contains some of the lowest angular momentum gas while clumpy gas nevertheless appears most prominently in the SMBH at z = 0. The answer to this conundrum may lie in the major merger that characterizes this galaxy, so we look specifically at the gas accreted during the merger. 
+Figure \ref{h258stackfrac} depicts the fractions of total gas in the galaxy (a) and the SMBH (b) at z=0, again differentiated by gas origin. Blue, green, and red distinguish cold, clumpy, and shocked, respectively. Yellow indicates gas that existed within the main halo upon formation. The galaxy has a mass nearly half comprised of gas entering the galaxy through unshocked, smooth accretion (48 \%), with 39 \% of the gas entering through mergers. The smallest fractions of the total gas are comprised of shocked gas (9 \%) and ``early''gas that existed at formation makes up the final, smallest fraction (4 \%). Unlike the galaxy, nearly 65 \% of the gas accreted by the central SMBH was gas accreted via mergers, while only a quarter (26 \%) is comprised of unshocked, smoothly accreted gas. Shocked gas makes up the last 9 \% of total gas entering the SMBH, along with a negligible ($<$ 1\%) amount of ``early'' gas. \textbf{It is evident then that the SMBH more readily accretes gas gained through mergers.} This result is contrary to \cite{Bellovary2013} which found that the fractions of gas comprising the SMBH and its host were nearly the same. Through our results, we find that lower mass galaxies can readily employ the physical effects of mergers to feed their SMBH.
 
-Figure \ref{h258angmom_merger} explicitly shows that at the time of the merger, clumpy gas (green) has the lowest angular momentum entering the galaxy (solid lines) or the SMBH (dashed lines). Both cold gas and shocked gas (blue and red, respectively) are entering the galaxy and SMBH with significantly higher angular momentum. Therefore, as we've already seen that the SMBH tends to preferentially accrete gas with lower angular momentum, we determine that the significantly lower angular momentum with which the clumpy gas enters the galaxy at this timestep, allows for nearly all of the clumpy gas to then funnel directly into the SMBH. It is clear through this result the physical properties afecting the galaxy through this major merger play an important role in allowing for the direct fueling of the SMBH at its center.
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258numfraction_brightgreen}}}
+\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions Across Time]{Gas fraction across redshift for the h258 galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
+\label{h258numfrac} 
+\end{figure}
 
-\textit{NOTE: Need to add a figure that clearly supports this argument. Possibly a series of angular momentum plots at the times of mergers. Or comparisons between cumulative distributions at time with and without mergers.}
+To better understand the apparent preference for merger-accreted gas, we examine the angular momentum of each type of gas at the moment it enters the galaxy Figure \ref{h258angmom}) shows that gas entering the SMBH (dashed lines) has an overall lower angular momentum than gas entering galaxy (solid lines), as expected; this statement is true regardless of the gas state. 
 
-\section{Gasoline - Low Resolution h277: Resolution Test}
-	
-Our quiescent galaxy, h277, was characterized by few mergers in its past, its final major merger occuring around z $\sim$ 3 (Figure \ref{h277face}). This merger is visible in Figure \ref{h277allmassgas}, though more subtle than the influx of gas in h258. (Linestyles as in Figure \ref{h258allmassgas}.) In h277, gas seemed to be gained at a more steady rate and at fairly high redshifts comprises a larger portion of the BH's total mass than seen in the previous, more active galaxy. The gas fractions (Figure \ref{h277numfrac}) in h277 (solid lines) and SMBH (dashed lines) are also markedly different than that of a galaxy with an active merger history. While it appears neither clumpy or unshocked gas (green and blue, respectively) particularly dominates at higher redshifts in the galaxy, merger gas becomes prominent in the SMBH at times when mergers occur. \textbf{[Ref merger tree when included.]} Again, this implies some physical process allowing merger gas to readily fuel black hole growth. Though, it is important to note that by z $\sim$ 0, smoothly accreted, unshocked gas again dominates in both the SMBH and host galaxy. As in our more active galaxy, it appears that the role of clumpy gas as it fuels the SMBH becomes important when mergers affect the galaxy; however, with h277 having a significantly less active merger history, unshocked, smooth accretion inevitably dominates the total gas supply.
+Figure \ref{h258angmom_merger} explicitly shows that at the time of the merger, the lowest angular momentum gas entering the galaxy (solid lines) is merger-driven (green, solid line). This is reflected in the SMBH (green, dashed line) as nearly all the clumpy gas at this time funnels directly into the SMBH.
 
-This result can be more clearly seen in Figure \ref{h277stackfrac}. (Colors as in \ref{h258stackfrac}.) Similar to Bellovary et. al. 2013 study, which found SMBH accretion in high mass, high redshift galaxies mirror their hosts in terms of accreted gas, h277's SMBH accretes a similar fraction of each type of gas, comparable to its host galaxy. Smoothly accreted, unshocked gas represents about half of the total gas in both the SMBH and the galaxy. Clumpy gas also maintains about 30\% of both, while an increase in shocked gas occurs, from 13\% in the galaxy to 22\% in the SMBH. %; however, we argue this may be due to supernova contamination in the simulation. 
-So by present day, h277 found no strong preference for the SMBH to prefer any one kind of gas in its accretion. Like the SMBHs in the study of \cite{Bellovary2013}, nearly the same fractions of gas entering the halo would then be accreted onto the SMBH (with the exception of shocked gas). Therefore, this may imply that without some physical driver, like the major merger of h258, clumpy gas is unlikely to dominate the gas accreted into the SMBH.
+%\textit{NOTE: Need to add a figure that clearly supports this argument. Possibly a series of angular momentum plots at the times of mergers. Or comparisons between cumulative distributions at time with and without mergers.}
 
-As in the previous case, we examined the angular momentum of all the gas particles accreted by the SMBH and host galaxy at the moment of entry. (Figure \ref{h277angmom}; Linestyles as in \ref{h258angmom}) Like before, it is immediately apparent that the clumpy gas accreted by both the black hole and its host has a lower angular momentum overall than the smoothly accreted gas; however, unlike we found in h258, the h277 galaxy accretes gas with lower angular momentum than that of its SMBH. This appears to imply that some of the gas with the lowest angular momentum is remaining in the host galaxy rather than accreting onto the SMBH. 
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_stackbarfractions}}}
+\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of accreted gas in h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligible ($<$ 1 $\%$) within the SMBH.}
+\label{h258stackfrac} 
+\end{figure}
 
-% IS THIS WHAT IT MEANS? This means that even though some of the gas in the host halo had lower angular momentum, that gas didn't find its way into the central region to accrete onto the BH. This may again imply that some physical phenomena is required to drive those gases towards the center. 
+\begin{figure}[p]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_angmom_cumudist}}}
+\caption[GASOLINE h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of gas accreted onto h258.  Gas accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{h258angmom} 
 
-As h277 and h258 are similar in size and appearance at z=0, these differences indicate that the varying histories of these simulations appears to play an important role in the evolution of these types of galaxies and their central SMBHs. We also note that while mergers may not be the only physical mechanisms by which gas can be funneled into the centers of galaxies, mergers between galaxies clearly play an important role when considering the gas accretion of SMBHs.
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_am_tsnew_228}}}
+\caption[GASOLINE h258 Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h258 at the time of the major merger (z $\sim$ 1). There are about 95,000 gas particles accreted at this timestep. Gas accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{h258angmom_merger} 
+\end{figure}
+
 
 \section{ChaNGa - High Resolution h258}
 
-Just as we found in the same galaxy, h258, of the lower resolution simulation, the high resolution h258 galaxy sees a distinct preference for accreting gas that has been gained through the many mergers in its history. In this version, h258 is characterized by two major mergers; the first occurs at z $\sim$ 1.8 and the second at z $\sim$ 1.2. Unlike its predecessor, this h258 has a smoother history of overall gas accretion (Figure \ref{hrh258allmassgas}). (Linestyles as in Figure \ref{h258allmassgas}.) However, the transitions between when smooth, unshocked accretion and mergers dominate is clearly distinguished. While clumpy gas (green) dominates at the earliest time, unshocked gas (blue) overtakes it for a short time ($\sim$ 2 Gyr) before clumpy gas once again dominates by z $\sim$ 1.5. 
+Just as we found in the same galaxy, h258, of the lower resolution simulation, the high resolution h258 galaxy sees a distinct preference for accreting gas that has been gained through the many mergers in its history. In this version, h258 is characterized by two major mergers; the first occurs at z $\sim$ 1.8 and the second at z $\sim$ 1.2. Unlike its predecessor, this h258 has a smoother history of overall gas accretion (Figure \ref{hrh258allmassgas}; Linestyles as in Figure \ref{h258allmassgas}). However, the transitions between when smooth, unshocked accretion and mergers dominate is clearly distinguished. While clumpy gas (green) dominates at the earliest time, unshocked gas (blue) overtakes it for a short time ($\sim$ 2 Gyr) before clumpy gas once again dominates by z $\sim$ 1.5. 
 
-This low redshift transition to a clumpy gas preference results in the large fraction of clumpy gas seen in the SMBH (Figure \ref{hrh258stackfrac}). (Colors as in Figure \ref{h258stackfrac}.) We can see from the figure that comparable to the Gasoline h258 version, the amount of unshocked, cold gas in the SMBH (24\%) is less than that entering the galaxy (36\%). The shocked gas, however, sees a sharper decline in the amount of shocked gas that enters the SMBH ($\sim$2\%) than in the host (8\%). This differs from the Gasoline h258 results and may be attributed to the higher resolution of the second iteration. [QUESTION FOR JILLIAN: Is this true? I was wondering if the higher SN Feedback in ChaNGa might cause more problems through misclassified shocked gas, but I'm thinking that the higher resolution may fix this issue.] Figure \ref{hrh258stackfrac} also explicitely shows how the fraction of clumpy gas accreted by the SMBH (74\%) is significantly larger than the fraction of clumpy gas accreted by the host galaxy (56\%).  \textbf{This result, which repeats the analysis with an improved and higher resolution simulation, confirms the initial study's findings!} This confirmation makes us confident that these results are well founded. 
+\begin{figure} [h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_massgastime}}}
+\caption[ChaNGa h258 SMBH Cumulative Mass]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
+\label{hrh258allmassgas} 
+\end{figure}
 
-In keeping with the analysis of the Gasoline galaxies, we followed up the study of the galaxy and SMBH gas fractions by examining the angular momentum of the accreted gas particles. Figure \ref{hrh258angmom} (Colors as in Figure \ref{h258angmom}.) shows a cumulative distribution of the gas particles' angular momentum as they enter the halo, distinguished between gas that ends up in the SMBH (dashed line) or the galaxy (solid lines) at z=0. This plot is consistent with Figure \ref{h258angmom}, as the angular momentum of gas entering the SMBH is lower when comparing between types of gas. In the ChaNGA h258 case, however, we see that the lowest angular momentum gas is comprised of both clumpy and unshocked gas, unlike in the Gasoline version which clearly showed that unshocked gas entered the SMBH with the lowest angular momentum. We attribute this variation to the subtle difference between the histories of the two simulations, including the two mergers which characterize the higher resolution version. This can be seen if we examine Figure \ref{hrh258angmom_merger2} which shows the cumulative distribution of the angular momentum of the incoming gas particles at the time of the second merger. (Colors and linestyles as in Figure \ref{h258angmom_merger}.) Figure \ref{hrh258angmom_merger2} explicitly shows that the gas ending up in the SMBH enters with the lowest angular momentum. This result is similar to what we found in the Gasoline h258 simulation, however, in the previous case it appeared the all the low angular momentum gas entering at the merger timestep ended up in the galaxy. Yet the distinction remains as there appears to be an influx of gas with low angular momentum feeding the black hole at this timestep that is not associated with the merger occurring at z $\sim$ 1.2. This may be attributed to the prior merger at z $\sim$ 1.8 (Figure \ref{hrh258angmom_merger1}) during and after which a large influx of low angular momentum gas enters the galaxy and SMBH. (Color and linestyles as in Figure \ref{hrh258angmom_merger2}) [Talk to Jillian and Kelly about this. Is this a reasonable explanation?]
+This low redshift transition to a clumpy gas preference results in the large fraction of clumpy gas seen in the SMBH (Figure \ref{hrh258stackfrac}; Colors as in Figure \ref{h258stackfrac}). We can see from the figure that comparable to the Gasoline h258 version, the amount of unshocked, cold gas in the SMBH (24\%) is less than that entering the galaxy (36\%). The shocked gas, however, sees a sharper decline in the amount of shocked gas that enters the SMBH ($\sim$2\%) than in the host (8\%). This differs from the Gasoline h258 results and may be attributed to the higher resolution of the second iteration. Figure \ref{hrh258stackfrac} also explicitely shows how the fraction of clumpy gas accreted by the SMBH (74\%) is significantly larger than the fraction of clumpy gas accreted by the host galaxy (56\%).  \textbf{This result, which repeats the analysis with an improved and higher resolution simulation, confirms the initial study's findings!} This confirmation makes us confident that these results are well founded. 
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_stackbarfractions}}}
+\caption[ChaNGa h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of the gas particles accreted by the high resolution ChaNGA h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligable ($<$ 1 \%) within the SMBH.}
+\label{hrh258stackfrac} 
+\end{figure}
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_cumu_4096}}}
+\caption[ChaNGa h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGa h258.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{hrh258angmom} 
+\end{figure}
+
+In keeping with the analysis of the Gasoline galaxies, we followed up the study of the galaxy and SMBH gas fractions by examining the angular momentum of the accreted gas particles. Figure \ref{hrh258angmom} (Colors as in Figure \ref{h258angmom}.) shows a cumulative distribution of the gas particles' angular momentum as they enter the halo, distinguished between gas that ends up in the SMBH (dashed line) or the galaxy (solid lines) at z=0. This plot is consistent with Figure \ref{h258angmom}, as the angular momentum of gas entering the SMBH is lower when comparing between types of gas. In the ChaNGA h258 case, however, we see that the lowest angular momentum gas is comprised of both clumpy and unshocked gas, unlike in the Gasoline version which clearly showed that unshocked gas entered the SMBH with the lowest angular momentum. We attribute this variation to the subtle difference between the histories of the two simulations, including the two mergers which characterize the higher resolution version. This can be seen if we examine Figure \ref{hrh258angmom_merger2} which shows the cumulative distribution of the angular momentum of the incoming gas particles at the time of the second merger. (Colors and linestyles as in Figure \ref{h258angmom_merger}.) Figure \ref{hrh258angmom_merger2} explicitly shows that the gas ending up in the SMBH enters with the lowest angular momentum. This result is similar to what we found in the Gasoline h258 simulation, however, in the previous case it appeared the all the low angular momentum gas entering at the merger timestep ended up in the galaxy. Yet the distinction remains as there appears to be an influx of gas with low angular momentum feeding the black hole at this timestep that is not associated with the merger occurring at z $\sim$ 1.2. This may be attributed to the prior merger at z $\sim$ 1.8 (Figure \ref{hrh258angmom_merger1}) during and after which a large influx of low angular momentum gas enters the galaxy and SMBH. (Color and linestyles as in Figure \ref{hrh258angmom_merger2}) 
+
+
+\begin{figure}
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_tsnew_1128}}}
+\caption[ChaNGa h258 First Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGA h258 galaxy at the time of the first major merger (z $\sim$ 1.8). There are about 900,000 gas particles accreted at this timestep, which gas particles accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{hrh258angmom_merger1} 
+
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_tsnew_1584}}}
+\caption[ChaNGa h258 Second Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGA h258 galaxy at the time of the second major merger (z $\sim$ 1.2). There are about 450,000 gas particles accreted at this timestep, which gas particles accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{hrh258angmom_merger2} 
+\end{figure}
+
+%[Talk to Jillian and Kelly about this. Is this a reasonable explanation?]
+
+\section{Gasoline - Low Resolution h277: Resolution Test}
+	
+Our quiescent galaxy, h277, was characterized by few mergers in its past, with final significant merger (q=0.14) occuring around z $\sim$ 3 (Figure \ref{h277face}). This merger is visible in Figure \ref{h277allmassgas} as a significant spike in the clumpy gas (green, solid line); however, the overall accretion of the SMBH is more subtle than the influx of gas in h258. (Linestyles as in Figure \ref{h258allmassgas}.) In h277, gas in the SMBH is gained at a more steady rate and at fairly high redshifts comprises a larger portion of the BH's total mass than seen in h258. The gas fractions (Figure \ref{h277numfrac}) in h277 (solid lines) and SMBH (dashed lines) are also markedly different. While it appears neither clumpy or unshocked gas (green and blue, respectively) dominates at high redshifts in the galaxy, merger gas dominates in the SMBH at the time of the last significant merger (z $\sim$ 3, with a gas mass of 4.43 $\times$ 10$^9$ M$_{\odot}$). Again, some physical process allows merger gas to readily fuel black hole growth. Though, it is important to note that by z $\sim$ 0, smoothly accreted, unshocked gas again dominates in both the SMBH and host galaxy. As in our more active galaxy, it appears that the role of clumpy gas as it fuels the SMBH becomes important when mergers affect the galaxy; however, since h277 is quiescent, smooth accretion inevitably dominates the total gas resevoir.
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_allmassgas_final}}}
+\caption[GASOLINE h277 SMBH Cumulative Mass]{The cumulative mass of h277's SMBH as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
+\label{h277allmassgas} 
+\end{figure}
+
+This result can be more clearly seen in Figure \ref{h277stackfrac} which shows the z $\sim$ 0 gas fractions of the galaxy and SMBH. (Colors as in \ref{h258stackfrac}.) Smoothly accreted, unshocked gas represents about half of the total gas in both the SMBH and the galaxy. Clumpy gas also maintains about 30\% of both, while an increase in shocked gas occurs, from 13\% in the galaxy to 22\% in the SMBH; however, we argue this may be due to contamination in the simulation. Gasoline stops tracing shocked gas near the galaxy as shocks from supernovae can contaminate those results. We note that if gas is misclassified as shocked rather than unshocked, this may explain the apparent preference for shocked gas in the SMBH.
+%We stop tracing shocked gas near the galaxy (~1/10th of the virial radius) bc shocks from SN can contaminate those results
+%if gas is misclassified as shocked (should be cold) SMBH probably accretes the same amount of shocked as gxy, but if some of the cold gas is 
+%misclassified as shocked, that may explain why we see an increase shocked in the SMBH.
+%; however, we argue this may be due to supernova contamination in the simulation. 
+Therefore, by present day, we argue that h277 finds no strong preference for the SMBH to prefer any one kind of gas in its accretion. Like the SMBHs in the study of \cite{Bellovary2013}, nearly the same fractions of gas entering the halo would then be accreted onto the SMBH (with the exception of shocked gas). Considering the early end to significant merger affects in h277 and the continued accumulation of smooth accretion and minor mergers, we determine that without some physical driver, like the late major mergers of h258, clumpy gas is unlikely to dominate the gas accreted into the SMBH. 
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277numfraction_brightgreen}}}
+\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions Across Time]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
+\label{h277numfrac} 
+\end{figure}
+
+\begin{figure}[h]
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_stackbarfractions}}}
+\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of the gas particles accreted in h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligable ($<$ 1 \%) within the SMBH.}
+\label{h277stackfrac} 
+\end{figure}
+
+As in the previous case, we examined the angular momentum of gas accreted by both the SMBH and the host galaxy halo. (Figure \ref{h277angmom}; Linestyles as in \ref{h258angmom}) Like before, it is immediately apparent that the clumpy gas accreted by both the black hole and its host has a lower angular momentum overall than the smoothly accreted gas; however, unlike we found in h258, the SMBH does not accrete the lower angular momentum materialå. This may be due to the gas entering the galaxy primarily through minor mergers after z $\sim$ 3 and therefore losing the physical driver of a major merger at later times. Figure \ref{h277angmom_merger} shows the very slight change towards lower angular momentum in the clumpy gas during the merger event. 
+
+% IS THIS WHAT IT MEANS? This means that even though some of the gas in the host halo had lower angular momentum, that gas didn't find its way into the central region to accrete onto the BH. This may again imply that some physical phenomena is required to drive those gases towards the center. 
+
+
+\begin{figure}
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_angmom_cumudist}}}
+\caption[GASOLINE h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h277.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{h277angmom} 
+
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_am_tsnew_096}}}
+\caption[GASOLINE h258 Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h277 at the time of the last major merger (z $\sim$ 3). There are about 50,000 gas particles accreted at this timestep. Gas accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
+\label{h277angmom_merger} 
+\end{figure}
+
+As h277 and h258 are similar in size and appearance at z=0, these differences indicate that varying galaxy assembly may play an important role in the evolution of these types of galaxies and the present day composition of their central SMBHs. We also note that while mergers may not be the only physical mechanisms that funnel gas into a SMBH, they play an important role when present.
+
+
 % *** END OF RESULTS ***
 
 
 % *** DISCUSSION ***
 \chapter{\normalsize DISCUSSION}
 \thispagestyle{empty}
-This study examines the gas accretion onto two fully cosmological simulations of Milky Way-size galaxies to redshift z $=$ 0, one with a quiescent merger history and one with major mergers characterizing its past. A second iteration of the latter, simulated with higher resolution and improved physics, is also examined. In each case, we trace the gas into the SMBHs at their centers and differentiate the gas accreted onto the galaxy and SMBHs by origin. Gas gained through mergers is classified as ``clumpy'' gas and smoothly accreted gas is seperated into ``shocked'' and ``unshocked'' categories. Our goal is to determine what types of gas are primarily feeding the SMBH and the galaxies of this class, and to determine what effects the merger histories of the galaxies may have on these processes.
+This study examines the gas accretion onto two fully cosmological simulations of Milky Way-size galaxies to redshift z $=$ 0, one with a quiescent merger history and one with major mergers characterizing its past. A second iteration of the latter, simulated with higher resolution and with improved physics, is also examined. In each case, we trace the gas into the SMBHs at their centers and differentiate the gas accreted onto the galaxy and SMBHs by origin. Gas gained through mergers is classified as ``clumpy'' gas and smoothly accreted gas is seperated into ``shocked'' and ``unshocked'' categories. Our goal is to determine what types of gas are primarily feeding the SMBH and the galaxies of this class, and to determine what effects the merger histories of the galaxies may have on these processes.
 
 When we examine the accretion of the galaxy with a quiescent history, we note that smooth accretion is the dominant feeding mechanism for both the galaxy and its central SMBH. We find that the fractions of each type of gas comprising the overall mass of the SMBH are comparable to the fractions of the gases making up its host. This result is consistent with the results of \cite{Bellovary2013} which similarly analyized high mass, high redshift galaxies and found the gas composition of the SMBHs mirror their host.
 
@@ -295,109 +401,790 @@ Contrary to these previous results, when we examined the galaxy with an active m
 
 The angular momentum of the accreted gas as it enters the galaxy sheds some light on the mechanism driving this preferentially accreted clumpy gas. Smoothly accreted gas, which enters with galaxy with a wide range of angular momentum, may become additionally torqued by the already existing disk. Meanwhile, gas entering through mergers is restricted by the direction of its entry and allows for a small range of low angular momentum gas to enter the main halo. This gives clumpy gas the advantage of falling more readily to the center and accreting onto the SMBH. Considering all origins of gas, we see a clear distinction wherein lower angular momentum gas preferentially feeds the SMBH.
 
-This however, does not remain true when we look again at the galaxy with a quiescent history. In this case, some of the gas entering the galaxy with the lowest angular momentum remains outside of the SMBH. This results implies that some of the physical processes affecting the galaxy with an active merger history accounts for the ready funneling of low angular momentum to the central region of the black hole. 
+This however, does not remain true when we look again at the galaxy with a quiescent history. In this case, some of the gas entering the galaxy with the lowest angular momentum remains outside of the SMBH. This result implies that some of the physical processes affecting the galaxy with an active merger history accounts for the ready funneling of low angular momentum to the central region of the black hole. 
 
 While the examination of these two extreme cases of galaxy merger history depict a class of galaxy with varying SMBH accretion methods, a further study of intermediate cases is required to begin understanding the broad spectrum of Milky Way-mass galaxy accretion. It is clear through this study that the presence (or absence) of major mergers can play an important role in the final compositions of central SMBHs, but the question of how important these mergers are remains to be seen.
 % *** END OF DISCUSSION ***
 
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_faceon_crop}}}
-\caption[GASOLINE h258]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h258, which has an active, merger-rich history.}
-\label{h258face} 
-\end{figure}
 
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_faceon}}}
-\caption[GASOLINE h277]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h277, which has a quiescent, merger-quiet history.}
-\label{h277face} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_allmassgas_final}}}
-\caption[GASOLINE h258 SMBH Cumulative Mass]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
-\label{h258allmassgas} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258numfraction_brightgreen}}}
-\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions Across Time]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
-\label{h258numfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_stackbarfractions}}}
-\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of the gas particles accreted in h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligible ($<$ 1 $\%$) within the SMBH.}
-\label{h258stackfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_angmom_cumudist}}}
-\caption[GASOLINE h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h258.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{h258angmom} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_am_tsnew_228}}}
-\caption[GASOLINE h258 Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h258 at the time of the major merger (z $\sim$ 1). There are about 95,000 gas particles accreted at this timestep, which gas particles accreted onto the main halo and central black hole distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{h258angmom_merger} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_allmassgas_final}}}
-\caption[GASOLINE h277 SMBH Cumulative Mass]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
-\label{h277allmassgas} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277numfraction_brightgreen}}}
-\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions Across Time]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
-\label{h277numfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_stackbarfractions}}}
-\caption[GASOLINE h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of the gas particles accreted in h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligable ($<$ 1 \%) within the SMBH.}
-\label{h277stackfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_angmom_cumudist}}}
-\caption[GASOLINE h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto h277.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{h277angmom} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_massgastime}}}
-\caption[ChaNGa h258 SMBH Cumulative Mass]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
-\label{hrh258allmassgas} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_stackbarfractions}}}
-\caption[ChaNGa h258 Galaxy and SMBH Gas Fractions at z=0]{Gas fractions of the gas particles accreted by the high resolution ChaNGA h258 by the main halo (left) and the SMBH (right), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligable ($<$ 1 \%) within the SMBH.}
-\label{hrh258stackfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_cumu_4096}}}
-\caption[ChaNGa h258 Cumulative Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGa h258.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{hrh258angmom} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_tsnew_1128}}}
-\caption[ChaNGa h258 First Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGA h258 galaxy at the time of the first major merger (z $\sim$ 1.8). There are about 900,000 gas particles accreted at this timestep, which gas particles accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{hrh258angmom_merger1} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{hrh258_am_tsnew_1584}}}
-\caption[ChaNGa h258 Second Merger Angular Momentum Distribution]{ Cumulative distribution of angular momentum of the gas particles accreted onto the high resolution ChaNGA h258 galaxy at the time of the second major merger (z $\sim$ 1.2). There are about 450,000 gas particles accreted at this timestep, which gas particles accreted onto the main halo and central black hole are distinguished by solid and dashed lines. The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
-\label{hrh258angmom_merger2} 
-\end{figure}
 
 \backmatter
 \chapter{CODE}
+\section{IDL Scripts for ChaNGa h258}
+As the Gasoline versions of h258 and h277 had been previously studied and my research was an extension of \cite{Bellovary2013}, many of the reduction scripts for these galaxies mostly existed. I waw required to make sure the majority of the scripts would transfer their analysis correctly onto these two galaxies. These scripts, which are not included as they belong more directly to their primary author, are available at https://github.com/nnicolesanchez with the full credits.
+
+Therefore, for the ChaNGa h258 galaxy, a similar analysis needed to be done and comparable scripts needed to be written to examine this high resolution version.
+
+\subsection{highres\_bhtrace\_latez.pro}
+\begin{verbatim}
+;# This program determines which bhs merged into our main halo prior to
+;# timestep 336. We assume we already know which black hole is in our main halo
+;# after timestep 336 (360 and above). For the case of CHANGA h258,
+;# this bhiord is  BHIORD 43553282 (B82) so we search for which 
+;# BHs merged in early z (before timestep 336) to form B82.
+
+;# The steps we take:
+;# Read in fits file with information about galaxy sim
+;#     Currently examining high rez, Changa simulation of h258
+;# Parse out array with B82s info
+;#     file.bhiords    (bh id)
+;#     file.afac       (a factor which calculates z)
+;#     mbhf            (final black hole mass; we could also use mbhi)
+;#     mbhi            (same as mbhf except shifted forward one step in array)
+;#                     (ie mbhf[4] = mbhi[5])
+;# Calculate difference in mass between each time step
+;# Create array with these values that are greater than the bimodal break in a
+;#     distribution of mbhf; Also get times
+;# Determine how bhs and their info look once the bh has disappeared/merged
+;# Parse out info for each of the bhs that have disappeared
+;# Find the mass at which these bhs have disappeared
+;# Compare to the array of times and masses
+;# Determine which galaxies merged into the main halo
+;# Boom.
+
+;# Vanderbilt Univ.  -- VPAC40: /home/sanchenn/IDL/highres_bhtrace_latez.pro
+;# N. Nicole Sanchez -- Last edit: January 23, 2016
+pro highres_bhtrace_latez,bhofinterest,bimodalcutoff
+
+;# Input Parameters
+if keyword_set(bhofinterest) then begin
+   bhofinterest=bhofinterest  
+endif else begin
+   print,'What BH is most central/massive?' 
+   stop
+endelse
+if keyword_set(bimodalcutoff) then begin
+   bimodalcutoff = bimodalcutoff 
+endif else begin
+   bimodalcutoff = 1.0d4        ;For h258, & should work usually
+endelse
+munit      = 1.84793d16         ; M_sun
+loadct,4
+
+;# Read in fits files
+file       = mrdfits('../BHAccLog.fits',1)
+;help,file
+
+;# Calculate z from a factor to sort by
+z          = (1. /file.afac) - 1.
+print,'Starting redshift',z[0]
+
+;# Set Main BH (for high res h258: B82)
+MBH_ind    = where(file.bhiord eq bhofinterest) 
+MBH_bhiord = file.bhiord[MBH_ind]
+MBH_mbhi   = file.mbhi[MBH_ind] * munit   ; M_sun
+MBH_mbhf   = file.mbhf[MBH_ind] * munit   ; M_sun
+MBH_dmacc  = file.dmacc[MBH_ind] * munit  ; M_sun
+MBH_mgi    = file.mgi[MBH_ind] * munit    ; M_sun
+MBH_z      = z[MBH_ind]
+;# NOTE: dmacc is change in gas mass from accr, does not include 
+;# gas accr from BH; will not use in rest of this script
+;# (Included above only to remind you, Nicole)
+
+;# THERE IS WEIRDNESS: Sometimes mgi = 0, these are bad lines
+;# Remove these then redefine all lines
+goodlines  = where(MBH_mgi ne 0)
+MBH_bhiord = MBH_bhiord[goodlines]
+MBH_mbhf   = MBH_mbhf[goodlines]
+MBH_mbhi   = MBH_mbhi[goodlines]
+MBH_z      = MBH_z[goodlines]
+
+;# Sort in time
+z_ind     = sort(MBH_z)
+MBH_mbhf  = MBH_mbhf[z_ind]
+MBH_mbhi  = MBH_mbhi[z_ind]
+MBH_z     = MBH_z[z_ind]
+nmbhf = n_elements(MBH_mbhf)
+print,'Number of BH Masses',nmbhf
+
+;# Calculate deltambhf and find bimodal cutoff
+MBH_deltambhf = fltarr(n_elements(MBH_mbhf))
+for i=1,n_elements(MBH_mbhf)-1 do begin
+   MBH_deltambhf[i] = MBH_mbhf[i-1] - MBH_mbhf[i]
+endfor
+
+;# Plot distribution of ∆mbhf to determine where your mass cutoff is
+plothist,alog10(MBH_deltambhf[where(MBH_deltambhf gt 0.0)]),/ylog,xtitle='Log o
+f Changes in Final BH Masses in M_sun',yrange=[0.1,100000]
+stop
+
+;# Plot mbhf across time to see all mergers (big steps)
+plot,MBH_z,MBH_mbhf,xtitle='Redshift',ytitle='Log of Central BH Mass in Msun',/
+ylog,xrange=[25,0]
+stop
+
+;# Create array with deltambhf values greater than cutoff value
+;# Cut off value for h258 = 10^4
+MBH_merger_masses = [0]
+MBH_merger_times  = [0]
+MBH_mass_at_merger = [0]
+;print,1.0d4
+for i=0,n_elements(MBH_deltambhf)-1 do begin
+   if (MBH_deltambhf[i] gt bimodalcutoff) then begin
+      new_dmacc = MBH_dmacc[i]
+      new_deltambhf = MBH_deltambhf[i]
+      new_z = MBH_z[i]
+      new_mbhf = MBH_mbhf[i]
+      MBH_merger_masses = [MBH_merger_masses,new_deltambhf] 
+      MBH_merger_times   = [MBH_merger_times,new_z]
+      MBH_mass_at_merger = [MBH_mass_at_merger,new_mbhf]
+      ;print,new_deltambhf
+      ;print,new_z
+      ;print,new_mbhf
+   endif
+endfor
+
+;print,MBH_mergers[0]
+;print,n_elements(MBH_mergers)
+;# NOTE: I'm doing a minus 2 at the end of these array redefinitions
+;# because there is some sort of bug in the highest redshift (large
+;# z) values.
+MBH_merger_masses  = MBH_merger_masses[1:n_elements(B52_merger_masses)-1]
+MBH_merger_times   = MBH_merger_times[1:n_elements(B52_merger_times)-1]
+MBH_mass_at_merger = MBH_mass_at_merger[1:n_elements(B52_mass_at_merger)-1]
+print,MBH_merger_masses
+print,'Number of main mergers',n_elements(MBH_merger_masses)
+;stop
+
+;# Figure out a way to determine when a black hole disappears
+uniq_ind = uniq(file.bhiord)
+uniq_ids = file.bhiord[UNIQ(file.bhiord, SORT(file.bhiord))]
+;print,uniq_ids[0:100]
+print,'Number of unique BH ids',n_elements(uniq_ids)
+
+bh_maybe_id   = [0]
+bh_maybe_mass = [0]
+bh_maybe_time = [0]
+print,'Number of Timesteps in Main BH',nmbhf
+for i=0,n_elements(uniq_ids)-1 do begin
+   bh_ind  = where(file.bhiord eq uniq_ids[i])
+   bh_ids  = file.bhiord[bh_ind]
+   ;print,'These should all be the same',bh_ids
+   bh_mbhf = file.mbhf[bh_ind] * munit   ; M_sun
+   bh_z    = z[bh_ind]
+   z_ind   = sort(bh_z)
+   bh_mbhf = bh_mbhf[z_ind]
+   bh_z   = bh_z[z_ind]
+   nbh     = n_elements(bh_ind)
+   ;print,'Number of times BH appears in',nbh
+
+   if (bh_z[0] ne MBH_z[0]) then begin
+      new_id   = bh_ids[0]
+      new_mass = bh_mbhf[0]
+      new_time = bh_z[0]
+      
+      bh_maybe_id = [bh_maybe_id, new_id]
+      bh_maybe_mass = [bh_maybe_mass, new_mass]
+      bh_maybe_time = [bh_maybe_time, new_time]
+   endif
+endfor
+
+bh_maybe_id = bh_maybe_id[1:n_elements(bh_maybe_id)-1]
+bh_maybe_mass = bh_maybe_mass[1:n_elements(bh_maybe_mass)-1]
+bh_maybe_time = bh_maybe_time[1:n_elements(bh_maybe_time)-1]
+;#print,bh_maybe_id
+;#stop
+
+
+for i=0,n_elements(bh_maybe_mass)-1 do begin
+   for j=0,n_elements(MBH_merger_masses)-1 do begin
+;      if (bh_maybe_mass[i] ge B52_merger_masses[j]-3) and (bh_maybe_mass[i] le
+ B52_merger_masses[j]+3) then begin
+;         print,bh_maybe_id[i]
+;         print,bh_maybe_mass[i]
+;         print,bh_maybe_time[i]
+;      endif
+      if (bh_maybe_time[i] ge MBH_merger_times[j]-0.02) and (bh_maybe_time[i] l
+e MBH_merger_times[j]+0.02) then begin
+         print,'Disappearing BH id',bh_maybe_id[i]
+         print,'Disappearing BH mass',bh_maybe_mass[i]
+         print,'Disappearing BH redshift',bh_maybe_time[i]
+
+         print,'Main BH mass at this time',MBH_mass_at_merger[j]
+
+      endif
+   endfor
+endfor
+
+;####### Random notes for Nicole 
+;# Remember: for h258, we know the main halo before 144 (z=10.10)
+;# SO, we only have to look at mergers before this to determine
+;# who the progenitors are
+;IDL> rtipsy,'h258.cosmo50cmb.3072gst10bwepsK1BHC52.000144',h,g,d,s
+;% Compiled module: RTIPSY.
+;% Compiled module: SWAP_ENDIAN.
+;IDL> help,h
+;** Structure <1ff7d88>, 6 tags, length=32, data length=28, refs=1:
+;   TIME            DOUBLE         0.090039161
+;   N               LONG          43560070
+;   NDIM            LONG                 3
+;   NGAS            LONG           9429025
+;   NDARK           LONG          34123819
+;   NSTAR           LONG              7226
+;IDL> print,h.time
+;     0.090039161
+;IDL> a=h.time
+;IDL> z          = (1. /a) - 1.
+;IDL> print,z
+;       10.106278
+
+end
+\end{verbatim}
+
+\subsection{highres\_gasiords.pro}
+\begin{verbatim}
+;# This script is a redux of Jillian's gasiords.pro (find in
+;# Vanderbilt VPAC40 /home/sanchenn/IDL/gasiords.pro which
+;# works for low res, Gasoline simulation outputs) 
+;# This script works for high res, CHANGA files instead. 
+
+;# The steps we take:
+;#    Pull out the information from BHAccLog.fits for gasiords.pro
+;#       BHIORDS          (ids for each bh)
+;#       BHMBHF           (mass of black hole at end of timestep;
+;#                        'final') Not used in this script. Just for out.bh
+;#       GASIORD          (id of eaten mass)
+;#       DMQ/EATEN MASS   (eaten mass of gas only)
+;#       TIME/Z           (time/redshift)
+;#    Specifically, pull out info for bhs of interest (h258: B52&B62)
+;#    Put in chronological order
+;#    With merger time from highres_bhtrace_latez_better.pro,
+;#       Concatenate in time order
+;#    Run through Jillian's gasiords.pro prescription
+
+;# NOTE: You will concatenate the info for B62 and B52 for 
+;#       these arrays of data. See highres_bhtrace_latez_better.pro 
+;#       for details on how central/massive BHs were determined
+
+;# IMPORTANT NOTE: We've determined that we will ONLY
+;# concentrate on the main bh and not consider the secondary as
+;# it is not comparatively interesting enough to trace
+
+;# Vanderbilt Univ.  -- VPAC40:  /home/sanchenn/IDL/highres_gasiords.pro
+;# N. Nicole Sanchez -- October 18, 2015
+pro highres_gasiords,mainbh,secondarybh
+  
+;# Parameter and Constants 
+if keyword_set(mainbh) then mainbh=mainbh  else mainbh = 43553282 ;For h258
+;if keyword_set(secondarybh) then secondarybh=secondarybh else secondary=435533
+62
+munit      = 1.84793d16                    ; M_sun
+loadct,4
+
+;# Read in fits files
+file       = mrdfits('../BHAccLog.fits',1)
+help,file
+
+;# Calculate z from a factor to sort by
+z          = (1. /file.afac) - 1.
+
+;# Pull out info we want
+mainbh_ind = where(file.bhiord eq mainbh)
+mainbh_mgi = file.mgi[mainbh_ind]          ;Only necessary to remove badlines
+mainbh_id  = file.bhiord[mainbh_ind]
+mainbh_gid = file.gasiord[mainbh_ind]
+mainbh_mbhf = file.mbhf[mainbh_ind] * munit ;M_sun
+mainbh_dmq = file.dmacc[mainbh_ind] * munit ;M_sun
+mainbh_z   = z[mainbh_ind]
+;# There are some bad lines where mgi=0, remove these & redefine arrays
+goodlines  = where(mainbh_mgi ne 0)
+mainbh_id  = mainbh_id[goodlines]
+mainbh_gid = mainbh_gid[goodlines]
+mainbh_mbhf = mainbh_mbhf[goodlines]
+mainbh_dmq = mainbh_dmq[goodlines]
+mainbh_z   = mainbh_z[goodlines]
+;# Sort in chronological order and redefine arrays
+z_ind      = sort(mainbh_z)  ;returns indeces
+mainbh_id  = mainbh_id[z_ind]
+mainbh_gid = mainbh_gid[z_ind]
+mainbh_mbhf = mainbh_mbhf[z_ind] 
+mainbh_dmq = mainbh_dmq[z_ind]
+mainbh_z   = mainbh_z[z_ind]
+print,'Starting redshift',mainbh_z[n_elements(mainbh_z)-1]
+print,'Starting mass',mainbh_mbhf[n_elements(mainbh_mbhf)-1]
+print,'Ending redshift',mainbh_z[0]
+print,'Ending mass',mainbh_mbhf[0]
+
+
+;# If there is a secondary black hole to trace
+if keyword_set(secondarybh) then begin
+   secondarybh = secondarybh
+   secbh_ind = where(file.bhiord eq secondarybh)
+   secbh_mgi = file.mgi[secbh_ind] ;Only necessary to remove badlines
+   secbh_id  = file.bhiord[secbh_ind]
+   secbh_gid = file.gasiord[secbh_ind]
+   secbh_mbhf = file.mbhf[secbh_ind] * munit ;M_sun
+   secbh_dmq = file.dmacc[secbh_ind] * munit ;M_sun
+   secbh_z   = z[secbh_ind]
+   ;# There are some bad lines where mgi=0, remove these & redefine arrays
+   goodlines  = where(secbh_mgi ne 0)
+   secbh_id  = secbh_id[goodlines]
+   secbh_gid = secbh_gid[goodlines]
+   secbh_mbhf = secbh_mbhf[goodlines]
+   secbh_dmq = secbh_dmq[goodlines]
+   secbh_z   = secbh_z[goodlines]
+   ;# Sort in chronological order and redefine arrays
+   z_ind     = sort(secbh_z)
+   secbh_id  = secbh_id[z_ind]
+   secbh_gid = secbh_gid[z_ind]
+   secbh_mbhf = secbh_mbhf[z_ind]
+   secbh_dmq = secbh_dmq[z_ind]
+   secbh_z   = secbh_z[z_ind]
+   print,'Secondary starting redshift',secbh_z[n_elements(secbh_z)-1]
+   print,'Secondary ending redshift',secbh_z[0]
+   
+   allbh_id  = [0]
+   allbh_gid = [0]
+   allbh_mbhf = [0]
+   allbh_dmq = [0]
+   allbh_z   = [0]
+   for i=0,n_elements(mainbh_id)-1 do begin
+      if (mainbh_z[i] lt secbh_z[0]) then begin
+         new_id  = mainbh_id[i]
+         new_gid = mainbh_gid[i]
+         new_mbhf = mainbh_mbhf[i]
+         new_dmq = mainbh_dmq[i]
+         new_z   = mainbh_z[i]
+         j=0
+         ;print,new_z
+      endif else begin
+         new_id  = secbh_id[j]
+         new_gid = secbh_gid[j]
+         new_mbhf = secbh_mbhf[j]
+         new_dmq = secbh_dmq[j]
+         new_z   = secbh_z[j]
+         ;print,new_z
+         j = j+1
+      endelse
+      
+      allbh_id  = [allbh_id,new_id]
+      allbh_gid = [allbh_gid,new_gid]
+      allbh_mbhf = [allbh_mbhf, new_mbhf]
+      allbh_dmq = [allbh_dmq,new_dmq]
+      allbh_z   = [allbh_z,new_z]
+   endfor
+
+   allbh_id  = allbh_id[1:n_elements(allbh_id)-1]
+   allbh_gid = allbh_gid[1:n_elements(allbh_gid)-1]
+   allbh_mbhf = allbh_mbhf[1:n_elements(allbh_mbhf)-1]
+   allbh_dmq = allbh_dmq[1:n_elements(allbh_dmq)-1]
+   allbh_z   = allbh_z[1:n_elements(allbh_z)-1]
+
+endif else begin
+   
+   allbh_id  = mainbh_id
+   allbh_gid = mainbh_gid
+   allbh_mbhf = mainbh_mbhf
+   allbh_dmq = mainbh_dmq
+   allbh_z   = mainbh_z
+
+endelse
+
+;print,'Staring mass',allbh_mbhf[n_elements(allbh_mbhf)-1]
+;print,'Starting redshift',mainbh_z[n_elements(mainbh_z)-1]
+;print,'Ending mass',allbh_mbhf[0]
+;print,'Ending Redshift',allbh_z[0]
+
+
+;# The following is pulled directly from Jillian's gasiords.pro
+;# for low res h258; edited for above variables 
+unique_iords = allbh_id[uniq(allbh_id,sort(allbh_id))]
+
+n=n_elements(unique_iords)
+; number of bhs
+print,n,' black holes'
+close,1
+
+for i=0,n-1 do begin
+    thisbh = where(allbh_id eq unique_iords[i])
+    eatengas = allbh_gid[thisbh]
+    eatenmass = allbh_dmq[thisbh]
+    ; only unique iords here.
+    uniquegas=uniq(eatengas,sort(eatengas)) ; indices
+    eacheatengas=eatengas[uniquegas]
+    filename='gasiords.'+trim(unique_iords[i])
+    openw,1,filename
+    for j=0L,n_elements(eacheatengas)-1 do begin
+        eacheatenmass=eatenmass[where(eatengas eq eacheatengas[j])]
+        printf,1,eacheatengas[j],total(eacheatenmass)
+    endfor
+    close,1
+endfor
+
+
+spawn,'ls gasiords.* > gasiords.list'
+;# End of Jillian's code
+
+
+;# Another attempt to just pull out gasiords and mass;
+;# Use above method, but figure out why that works better
+;filename='gasiords.good.all_fromNicolesway'
+;openw,1,filename
+;for i=0,n_elements(allbh_gid)-1 do begin
+;   printf,1,allbh_gid[i],allbh_dmq[i]
+;endfor
+;close,1
+
+
+;# Create a pseudo out.bh with bh ids, gas ids, time, dmq
+filename='out.bh'
+;openw,1,filename
+;for i=0,n_elements(allbh_z)-1 do begin
+;   printf,1,'BHiord',allbh_id[i],'gasiord',allbh_gid[i],'eaten mass/dmq',allbh
+_dmq[i],'redshift',al;lbh_z[i]
+;endfor
+;close,1
+
+
+;# Make .fits files! Too big otherwise
+mwrfits, allbh_id, 'centralbh_bhiords.fits', /create
+mwrfits, allbh_gid, 'centralbh_gasiords.fits', /create
+mwrfits, allbh_mbhf, 'centralbh_bhmass.fits', /create
+mwrfits, allbh_dmq, 'centralbh_eatenmass.fits', /create
+mwrfits, allbh_z, 'centralbh_redshift.fits', /create
+
+
+
+
+end
+\end{verbatim}
+
+\subsection{highres\_massgastime.pro}
+\begin{verbatim}
+;# This script is a redux of Jillian's massgastime.pro (find
+;# in Vanderbilt VPAC40 /home/sanchenn/IDL/massgastime.pro
+;# which works for low res, Gasoline simulation outputs)
+;# This script works for high res, CHANGA files instead.
+
+;# What we need:
+;#      BHIORDS           (ids of bh)
+;#      EATTIME/TIME_Z    (accretion time)
+;#      GASIORDS          (ids of gas particles) 
+;#      DM/DMQ/EATENMASS  (mass accreted from gas particles)
+
+;# Our steps:
+;# 1. Read in .fits for all above info
+;#    NOTE: This is chronological order
+
+;# Vanderbilt Univ.  -- VPAC40:
+;#                      /home/sanchenn/IDL/highres_massgastime.pro
+;# N. Nicole Sanchez -- Created Oct. 2015; Last Edit April 5, 2016
+pro highres_massgastime,plotter=plotter
+;loadct,4
+loadct,39  ;#Jillian's Colors
+
+;# Constants
+tunit=1.223128407d18/3.1556926d7/1d9
+;tunit = 1.223128407d18/3.1556926d7/1d9  ; Gyr 
+munit = 1.84793d16  ; M_sun
+
+;# Read above listed quantities
+bhiords   = mrdfits('centralbh_bhiords.fits',0)
+gasiords  = mrdfits('centralbh_gasiords.fits',0)  
+bhmass    = mrdfits('centralbh_bhmass.fits',0)    ; M_sun
+eatenmass = mrdfits('centralbh_eatenmass.fits',0) ; M_sun
+time_z    = mrdfits('centralbh_redshift.fits',0)  ; In chronological order
+time_afac = (1/(time_z + 1))
+time_gyr  = mrdfits('centralbh_timeGyr.fits',0)   ; Gyr
+
+;# Calculate time in Gyr
+; times and redshift, for the z axis on the plots
+;readcol,'../times.list',gyr,z,/silent
+zplotnames=['6','4','2','1','0.5','0']
+zplotnum=[6,4,2,1,0.5,0]
+tickvalues=interpol(time_gyr,time_z,zplotnum) 
+tickvalues[n_elements(tickvalues)-1]=time_gyr[n_elements(time_gyr)-1]
+;print,time_gyr[0]
+;stop
+
+;# Read in times to create the x-axis for our plots later
+;# Following is from Jillian's massgastime.pro
+zplotnames=['6','4','2','1','0.5','0']
+zplotnum=[6,4,2,1,0.5,0]
+tickvalues=interpol(time_gyr,time_z,zplotnum)
+tickvalues[n_elements(tickvalues)-1]=time_gyr[n_elements(gyr)-1]
+
+;# Read in my .fits files (created by highres_gasiords.pro)
+restore,'allgas.sav' ; Gas is in units of M_sun
+;help,allgas
+zs = allgas.zaccr
+ngas = n_elements(allgas.iords)
+
+file       = mrdfits('../BHAccLog.fits',1)
+;help,file
+
+uniq_ind = uniq(file.bhiord)
+;print,'Number of unique BH indeces',n_elements(uniq_ind)
+uniq_ids = file.bhiord[UNIQ(file.bhiord, SORT(file.bhiord))]
+print,'Number of unique BH IDs',n_elements(uniq_ids)
+
+;print,min(file.bhiord)
+;print,max(file.bhiord)
+gasuniq_ids = uniq(file.gasiord)
+uniq_gas = file.gasiord[UNIQ(file.gasiord, SORT(file.gasiord))]
+;print,'Number of unique gas iords,',n_elements(uniq_gas),' should not equal al
+l of them',n_elements(file.gasiord),' since file.gasiord is across all time'
+
+uniq_gasiords = gasiords[UNIQ(gasiords, SORT(gasiords))]
+print,'Number of unique gas IDs in gasiords',uniq_gasiords[0:100]
+
+
+match_multi,allgas.iords,gasiords,all1
+print,'Number of gas IDS in gasiords',n_elements(gasiords)
+; We want to use gasiords because it directly compares to eatenmass
+; and redshift and we know the BH can accrete from a gas particle
+; multiple times by taking "bites" out of it
+print,'Number of unique gas IDs in allgas.sav',ngas
+print,'Number of unique gas IDs in BHAccLog',n_elements(uniq_gas)
+; This number SHOULD be larger than the uniq gas Ids value for both
+; allgas.sav and gasiords since they both only consider halo 1 and
+; BHAccLog includes ALL BHs
+print,'Number of matched gas IDs between allgas.sav & BHAccLog.fits',n_elements
+(all1)
+print,'Total BH accreted particles',n_elements(gasiords)
+print,'BH accreted categorized  particles',n_elements(allgas.iords)
+;stop
+
+;# Divide Gas into Smooth and Clumpy
+;# CLUMPY:
+match_multi,allgas.clumpy,gasiords,c11
+clumpybhtimes = time_z[c11]
+clumpybhyears = time_Gyr[c11]
+clumpybhmass  = eatenmass[c11]
+;# SHOCKED
+match_multi,allgas.shocked,gasiords,sh11
+shockedbhtimes = time_z[sh11]
+shockedbhyears = time_Gyr[sh11]
+shockedbhmass  = eatenmass[sh11]
+;# COLD
+match_multi,allgas.cold,gasiords,cold11
+coldbhtimes = time_z[cold11]
+coldbhyears = time_Gyr[cold11]
+coldbhmass  = eatenmass[cold11]
+;# EARLY
+match_multi,allgas.early,gasiords,early1
+earlybhtimes = time_z[early1]
+earlybhyears = time_Gyr[early1]
+earlybhmass = eatenmass[early1]
+print,'How many early gas in allgas?',n_elements(allgas.early)
+print,'How many shocked gas in allgas?',n_elements(allgas.shocked)
+print,'How many clumpy gas in allgas?',n_elements(allgas.clumpy)
+print,'How many cold gas in allgas?',n_elements(allgas.cold)
+stop
+
+;# Put back in chronological order
+;# CLUMPY
+sortclumpy    = sort(clumpybhtimes)
+clumpybhtimes = clumpybhtimes[sortclumpy]
+clumpybhyears = clumpybhyears[sortclumpy]
+clumpybhmass  = clumpybhmass[sortclumpy]
+clumpybhtimes = reverse(clumpybhtimes)
+clumpybhyears = reverse(clumpybhyears)
+clumpybhmass  = reverse(clumpybhmass)
+;# SHOCKED
+sortshocked    = sort(shockedbhtimes)
+shockedbhtimes = shockedbhtimes[sortshocked]
+shockedbhyears = shockedbhyears[sortshocked]
+shockedbhmass  = shockedbhmass[sortshocked]
+shockedbhtimes = reverse(shockedbhtimes)
+shockedbhyears = reverse(shockedbhyears)
+shockedbhmass  = reverse(shockedbhmass)
+;# COLD
+sortcold    = sort(coldbhtimes)
+coldbhtimes = coldbhtimes[sortcold]
+coldbhyears = coldbhyears[sortcold]
+coldbhmass  = coldbhmass[sortcold]
+coldbhtimes = reverse(coldbhtimes)
+coldbhyears = reverse(coldbhyears)
+coldbhmass  = reverse(coldbhmass)
+;# EARLY
+sortearly    = sort(earlybhtimes)
+earlybhtimes = earlybhtimes[sortearly]
+earlybhyears = earlybhyears[sortearly]
+earlybhmass  = earlybhmass[sortearly]
+earlybhtimes = reverse(earlybhtimes)
+earlybhyears = reverse(earlybhyears)
+earlybhmass  = reverse(earlybhmass)
+
+;# TOTAL
+eatenmass_rev = reverse(eatenmass)
+time_z_rev    = reverse(time_z)
+time_Gyr_rev    = reverse(time_Gyr)
+;# BH TOTAL
+;bhmass_rev    = reverse(bhmass)
+bhmass_rev    = bhmass
+
+;# Add and get cumulative totals
+coldtotal    = total(coldbhmass,/cumulative)
+shockedtotal = total(shockedbhmass,/cumulative)
+clumpytotal  = total(clumpybhmass,/cumulative)
+earlytotal   = total(earlybhmass,/cumulative)
+alltotal     = total(eatenmass_rev,/cumulative)
+bhtotal      = total(bhmass_rev,/cumulative)
+
+
+;print,clumpybhtimes[0:50]
+;print,shockedbhtimes[0:50]
+;print,coldbhtimes[0:50]
+;print,earlybhtimes
+;print,time_z_rev[0:50]
+
+eatenmasstotal = total(eatenmass,/cumulative)
+print,'clumpy + cold + shocked + early ids',n_elements(clumpytotal),n_elements(
+coldtotal),n_elements(shockedtotal),n_elements(earlytotal),' equals ',n_element
+s(clumpytotal) + n_elements(coldtotal) + n_elements(shockedtotal) + n_elements(
+earlytotal),' should equal all gas ids',n_elements(gasiords)
+print,'clumpy + cold + shocked + early times',n_elements(clumpybhtimes),n_eleme
+nts(coldbhtimes),n_elements(shockedbhtimes),n_elements(earlybhtimes),' equals '
+,n_elements(clumpybhtimes) + n_elements(coldbhtimes) + n_elements(shockedbhtime
+s) + n_elements(earlybhtimes),' should equal all gas ids',n_elements(time_z_rev
+)
+;stop
+
+
+if keyword_set(plotter) then paperplot,filename='cumumassvstime.ps'
+plot,time_Gyr,reverse(alltotal),xtit='Time [Gyr]',ytit='Cumulative BH Mass (M'+
+sunsymbol()+')',yra=[1000,1e9],/ylog,xra=[0,time_gyr[0]],xstyle=9;,color=0
+oplot,time_Gyr,bhmass,linestyle=2
+oplot,coldbhyears,coldtotal,color=90,linestyle=3
+;oplot,earlybhtimes,earlytotal,linestyle=2,color=255
+oplot,clumpybhyears,clumpytotal,color=140
+oplot,shockedbhyears,shockedtotal,color=240,linestyle=1
+legend,['Total BH Mass','Total Gas','Cold','Clumpy','Shocked'],lines=[2,0,0,3,0
+],color=[0,0,80,140,240],charsize=1,/top,/left
+axis,xaxis=1,xtit='Redshift',xtickv=tickvalues,xticks=n_elements(zplotnames)-1,
+xtickname=zplotnames
+if keyword_set(plotter) then paperplot,/close
+stop
+
+;REDSHIFT vs mass
+if keyword_set(plotter) then paperplot,filename='cumumassvsz.ps'
+plot,time_z,reverse(alltotal),xtit='Redshift',ytit='Cumulative BH Mass (M'+suns
+ymbol()+')',yra=[1000,1e8],/ylog,xra=[14,0];,color=0
+oplot,time_z,bhmass,linestyle=2
+oplot,coldbhtimes,coldtotal,color=80,linestyle=3
+oplot,clumpybhtimes,clumpytotal,color=140
+oplot,shockedbhtimes,shockedtotal,color=240,linestyle=1
+legend,['Total BH Mass','Total Gas','Cold','Clumpy','Shocked'],lines=[2,0,0,3,0
+],color=[0,0,80,140,240],charsize=1,/top,/left
+if keyword_set(plotter) then paperplot,/close
+
+axis,xaxis=1,xtit='Redshift',xtickv=tickvalues,xticks=n_elements(zplotnames)-1,
+xtickname=z
+stop
+
+
+;# Create mass vs time plots: need to bin data
+;# BIN TIME
+nbins = 100
+maxtime = max(time_z)
+mintime = min(time_z)
+bindivision = (maxtime-mintime)/nbins
+tinds = indgen(nbins)*bindivision+mintime  ; indices for time array.
+bindmtime = tinds
+;# BIN MASS, use sum of mass in each bin set
+bindm = fltarr(nbins)
+bincoldbhmass =  fltarr(nbins)
+binclumpybhmass =  fltarr(nbins)
+binshockedbhmass =  fltarr(nbins)
+for i=0,nbins-2 do begin
+    inds = where(time_z ge (i*bindivision+mintime) AND time_z lt ((i+1)*bindivi
+sion)+mintime,ninds)
+    if ninds ne 0 then bindm[i] = total(eatenmass[inds])
+    coldinds = where(coldbhtimes ge (i*bindivision+mintime) AND coldbhtimes lt 
+((i+1)*bindivision)+mintime,ncoldinds)
+    if ncoldinds ne 0 then bincoldbhmass[i] = total(coldbhmass[coldinds])
+    clumpyinds = where(clumpybhtimes ge (i*bindivision+mintime) AND clumpybhtim
+es lt ((i+1)*bindivision)+mintime,nclumpyinds)
+    if nclumpyinds ne 0 then binclumpybhmass[i] = total(clumpybhmass[clumpyinds
+])
+    shockedinds = where(shockedbhtimes ge (i*bindivision+mintime) AND shockedbh
+times lt ((i+1)*bindivision)+mintime,nshockedinds)
+    if nshockedinds ne 0 then binshockedbhmass[i] = total(shockedbhmass[shocked
+inds])
+endfor
+
+;# Mass vs Redshift
+if keyword_set(plotter) then paperplot,filename='massvstime.ps'
+;print,bindmtime
+plot,bindmtime,bindm,xtit='Redshift',ytit='Mass Accreted by Central BH',/ylog,y
+ra=[1,1e6],xra=[20,0]
+oplot,bindmtime,binclumpybhmass,color=140;,psym=3
+oplot,bindmtime,bincoldbhmass,color=90   ;,psym=3
+oplot,bindmtime,binshockedbhmass,color=240 ;,psym=3
+legend,['all','cold','shocked','clumpy'],lines=[0,0,0,0],color=[0,90,240,140],c
+harsize=1,/right,/bottom
+if keyword_set(plotter) then paperplot,/close
+stop
+
+;# Cumulative Mass Plot
+;# Need to convert all times to a factor to multiply by tunit
+if keyword_set(plotter) then paperplot,filename='allmassgas.ps'
+plot,time_z,reverse(alltotal),xtit='Redshift',ytit='Cumulative BH Mass (M'+suns
+ymbol()+')',/ylog,yra=[100,1e8],xra=[20,0];,xstyle=8  ;puts on upper x-axis
+oplot,time_z,clumpytotal,color=125
+oplot,time_z,bhmass,lines=2,color=0
+oplot,time_z,coldtotal,lines=0,color=80
+oplot,time_z,shockedtotal,lines=0,color=240
+oplot,time_z,earlytotal,color=5
+
+legend,['total BH mass','total gas','cold','shocked','clumpy'],lines=[2,0,0,0,0
+],color=[0,0,80,240,125],charsize=1,/top,/left
+;# Fix following line for upper x-axis
+;axis,xaxis=1,xtit='Redshift',xtickv=tickvalues,xticks=n_elements(zplotnames)-1
+,xtickname=zplotnames
+if keyword_set(plotter) then paperplot,/close
+stop
+
+; ### test that the parts add up to the whole. ###
+
+nclumpy = n_elements(clumpytotal)
+ncold = n_elements(coldtotal)
+nshocked = n_elements(shockedtotal)
+ndm = n_elements(alltotal)
+nearly = n_elements(earlytotal)
+
+print,'Does the final mass of alltotal',alltotal[ndm-1],' equal the final masse
+s of all the others?',clumpytotal[nclumpy-1]+coldtotal[ncold-1]+shockedtotal[ns
+hocked-1]+earlytotal[nearly-1]
+
+print,'gas mass fractions '
+print,'cold/total = ',coldtotal[ncold-1]/alltotal[ndm-1]
+print,'clumpy/total = ',clumpytotal[nclumpy-1]/alltotal[ndm-1]
+print,'shocked/total = ',shockedtotal[nshocked-1]/alltotal[ndm-1]
+print,'early/total = ',earlytotal[nearly-1]/alltotal[ndm-1]
+
+print,'gas mass fractions (weird?)'
+print,'cold/total = ',total(coldtotal)/total(alltotal)
+print,'clumpy/total = ',total(clumpytotal)/total(alltotal)
+print,'shocked/total = ',total(shockedtotal)/total(alltotal)
+print,'early/total = ',total(earlytotal)/total(alltotal)
+
+print,'does the total mass of alltotal',total(alltotal),' equal the added sums 
+of all the others?','cold',total(coldtotal),' clumpy',total(clumpytotal),' shoc
+ked',total(shockedtotal),' early',total(earlytotal)
+print,'total =',total(coldtotal)+total(clumpytotal)+total(shockedtotal)+total(e
+arlytotal)
+
+
+print,'gas number fractions '
+print,'cold/total = ',n_elements(coldbhmass)
+;/n_elements(alltotal)
+print,'clumpy/total = ',n_elements(clumpybhmass)
+;/n_elements(alltotal)
+print,'shocked/total = ',n_elements(shockedbhmass)
+;/n_elements(alltotal)
+print,'early/total = ',n_elements(earlybhmass)/n_elements(alltotal)
+
+end
+\end{verbatim}
+
+\section{Python Scripts}
+%Unlike the IDL scripts, 
+
+%angmom.py %for h258 lores
+%accr\_histograms/infalltime.py
+
 \thispagestyle{empty}
 
 \chapter{APPENDIX}
@@ -411,7 +1198,7 @@ While the examination of these two extreme cases of galaxy merger history depict
 \addtocontents{toc}{\textbf{ACKNOWLEDGEMENTS}}
 
 \renewcommand{\thepage}{}\renewcommand{\thepage}{}
-\bibliography{/Users/nicolesanchez/Documents/MENDELEY/MEND_bibtexfiles/Sanchez2016.bib}
+\bibliography{/Users/the_neekster/Documents/MENDELEY/MEND_bibtexfiles/Sanchez2016.bib}
 
 
 \end{document}
